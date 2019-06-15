@@ -39,7 +39,6 @@ class Date
 		{
 			$label = intval($daysBetween).' dias';
 		}
-
 		
 		return array('label' => $label, 'h' => $h, 'm' => $m, 's' => $s);
 	}
