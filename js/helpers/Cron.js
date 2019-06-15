@@ -85,13 +85,13 @@ function controleTempo(acabando=true, acabou=true)
                 $(this).parent().removeClass('piscar');
                 $(this).parent().parent().css('background', 'red');
                 $(this).parents('.div-id').find('button').prop('disabled', true);
+                $(this).parents('.div-id').find('.input-palpite').prop('readonly', true);
 
                 $(this).removeClass('m');
                 $(this).parent().find('.h').removeClass('h');
                 $(this).parent().find('.s').removeClass('s');
-                return false;
+                startTime();
             }
         }
     });
-    startTime();
 }
