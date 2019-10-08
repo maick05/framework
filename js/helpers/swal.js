@@ -1,16 +1,16 @@
 function swalConfirm(msg, callback)
 {
     swal({
-        title:"Are you Sure?",
+        title:"Atenção!",
         text: msg,
         buttons: {
           Cancel: 
           {
-              text:"Cancel",
+              text:"Cancelar",
               value: false,
           },
           Yes: {
-            text: "Yes",
+            text: "Sim",
             value: true,
           },
         },
